@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="script.js" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruit = "Apple";
+      fruit = "Orange";
+
+      console.log("The fruit is", fruit);
+
+      console.log(35 + 3.5);
+      console.log(35 + 3.5 - 1969);
+      console.log(65 / 240);
+      console.log(0.2708 * 100);
+
+      console.log("Yaser".toUpperCase());
+      console.log("    Remove Whitespace    ".trim());
+
+      console.log("How many characters long is this string?".length);
+
+      let carSpeed = 90;
+
+      if (carSpeed > 100) {
+        console.log("Slow down!!");
+      } else {
+        console.log("Carry on.");
+      }
+
+      const wordCount = 0;
+      if (wordCount == 0) {
+        console.log("Get writing!");
+      }
+
+      const currentTemperature = 15;
+      const goneForARun = false;
+      if (currentTemperature > 10 && goneForARun == false) {
+        console.log("Go for a run!");
+      }
+
+      const name = "Mary";
+
+      if (name.length > 10) {
+        console.log("You have a long name!");
+      } else if (name.length < 5) {
+        console.log("You have a short name!");
+      } else console.log("You have a medium length name!");
+
+      const printCurrentTime = () => {
+        const currentTime = new Date();
+        return currentTime.toLocaleTimeString();
+      };
+
+      console.log(printCurrentTime);
+
+      function giveName() {
+        let myName = Yaser;
+      }
+
+      console.log(giveName);
+      console.log(giveName);
+
+      function printGreeting(name) {
+        console.log(`Hello ${name}`);
+      }
+      printGreeting("Bob");
+      printGreeting("Sue");
+
+      console.log(printGreeting);
+
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+
+      const first = multiply(10, 2);
+      console.log(first);
+
+      function warmEnough(temperature) {
+        return temperature > 10;
+      }
+
+      if (warmEnough(15)) {
+        console.log("Go for a run!");
+      }
+    </script>
+  </body>
+</html>
